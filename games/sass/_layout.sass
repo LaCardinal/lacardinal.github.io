@@ -1,0 +1,52 @@
+html
+    @include light
+    font-size: 10px
+    background: linear-gradient(135deg, #AD5389 0%, #3C1053 100%) 
+.container 
+    position: relative
+    max-width: 940px
+    left: 50%
+    transform: translateX(-50%)
+    display: flex
+    justify-content: space-evenly
+    margin-top: 5rem
+.template
+    display: flex
+    flex-direction: column
+    align-items: center
+.vault 
+    .container
+        flex-direction: column
+        align-items: center
+        .up-btn 
+            align-self: flex-end
+@media screen and ( min-width: 768px ) and (max-width: 960px)
+    .container  
+        width: 768px
+@media screen and ( min-width: 576px ) and (max-width: 767px)
+    .container  
+        width: 576px
+    .main-temp 
+        flex-direction: column 
+        justify-content: center
+        align-items: center
+        .template
+            width: 70%
+            height: auto
+            margin-bottom: 30px
+            h2,h3,p 
+                transform: scale(0.9)
+@media screen and ( min-width: 320px ) and (max-width: 575px)
+    .container  
+        width: 320px
+    .main-temp 
+        flex-direction: column 
+        justify-content: center
+        align-items: center
+        .template
+            width: 90%
+            height: auto
+            margin-bottom: 30px
+            h2,h3,p 
+                transform: scale(0.8)
+    

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script type="text/javascript">
+    $(function() {
+        $(window).scroll(function() {
+            if($(this).scrollTop() != 0) {
+                $('#toTop').fadeIn();
+                } else {
+                $('#toTop').fadeOut();
+                }
+        });
+        $('#toTop').click(function() {
+        $('body,html').animate({scrollTop:0},800);
+        });
+    });
+    
+    </script>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <section>
+        <div class="container">
+                <div class="template">
+                    <div class="temp-img">
+                        <div class="pulse"></div>
+                        <img src="./img/cyber.png" alt="">
+                    </div>
+                    <h2>Cyberpunk 2077</h2>
+                    <h3>20 april 2020</h3>
+                    <p>Cyberpunk 2077 is a 2020 action role-playing video game developed and published by CD Projekt. The story takes place in 2077 at Night City, an open world set in the Cyberpunk universe.</p>
+                    </div>
+                <div class="template">
+                    <div class="temp-img">
+                        <div class="pulse"></div>
+                        <img src="./img/assasin.png" alt="">
+                    </div>
+                    <h2>Assasin's creed</h2>
+                    <h3>21 april 2020</h3>
+                    <p>Assassin's Creed Valhalla is an action role-playing video game developed by Ubisoft Montreal and published by Ubisoft.</p>
+                </div>
+                <div class="template">
+                    <div class="temp-img">
+                        <div class="pulse"></div>
+                        <img src="./img/minecraft.png" alt="">
+                    </div>
+                    <h2>Minecraft</h2>
+                    <h3>28 april 2020</h3>
+                    <p>Explore new gaming adventures, accessories, & merchandise on the Minecraft Official Site. Buy & download the game here, or check the site for the latest news.</p>
+                </div>
+            </div>
+            <div class="container">
+                <div class="flip-temp">
+                    <div class="temp-img">
+                        <div class="pulse"></div>
+                        <img src="./img/assasin.png" alt="">
+                    </div>
+                    <h2>Assasin's creed</h2>
+                    <h3>21 april 2020</h3>
+                    <p>Assassin's Creed Valhalla is an action role-playing video game developed by Ubisoft Montreal and published by Ubisoft.</p>
+                </div>
+            </div>
+    </section>
+    <section class="vault">
+        <div class="container">
+                <div class="sticky">
+                    <p>Sticky bar</p>
+                </div>
+                <div class="sticky-line"></div>
+                <button class="up-btn" id="toTop">UP</button>
+        </div>
+    </section>
+</body>
+</html>
