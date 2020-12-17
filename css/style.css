@@ -22,7 +22,7 @@ html {
 
 .container {
   position: relative;
-  max-width: 940px;
+  max-width: 960px;
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
@@ -39,13 +39,14 @@ html {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  max-width: 30%;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.flip-temp {
+  max-width: 30%;
 }
 
 .vault .container {
@@ -61,65 +62,38 @@ html {
 .vault .container .up-btn {
   -ms-flex-item-align: end;
       align-self: flex-end;
+  margin-right: 1rem;
 }
 
-@media screen and (min-width: 768px) and (max-width: 960px) {
+@media screen and (min-width: 768px) and (max-width: 959px) {
   .container {
     width: 768px;
   }
+  p {
+    font-size: 1.4rem;
+  }
 }
 
-@media screen and (min-width: 576px) and (max-width: 767px) {
+@media screen and (min-width: 320px) and (max-width: 767px) {
   .container {
-    width: 576px;
-  }
-  .main-temp {
+    max-width: 767px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
   }
-  .main-temp .template {
-    width: 70%;
-    height: auto;
-    margin-bottom: 30px;
+  .container .template {
+    max-width: 80%;
+    margin-bottom: 5rem;
   }
-  .main-temp .template h2, .main-temp .template h3, .main-temp .template p {
-    -webkit-transform: scale(0.9);
-            transform: scale(0.9);
+  .container .flip-temp {
+    max-width: 80%;
   }
-}
-
-@media screen and (min-width: 320px) and (max-width: 575px) {
-  .container {
-    width: 320px;
-  }
-  .main-temp {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  .main-temp .template {
-    width: 90%;
-    height: auto;
-    margin-bottom: 30px;
-  }
-  .main-temp .template h2, .main-temp .template h3, .main-temp .template p {
-    -webkit-transform: scale(0.8);
-            transform: scale(0.8);
+  .container p {
+    font-size: 2.6rem;
   }
 }
 
@@ -148,7 +122,6 @@ section p {
 
 .template {
   font-size: 1.8rem;
-  max-width: 30%;
   display: block;
   background-color: #fff;
   border-radius: 8px 8px 16px 16px;
@@ -178,7 +151,6 @@ section p {
 }
 
 .flip-temp {
-  max-width: 30%;
   font-size: 1.8rem;
   margin: 100px auto;
   -webkit-transform: rotate(12deg);
