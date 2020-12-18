@@ -20,6 +20,14 @@ html {
   background: linear-gradient(135deg, #AD5389 0%, #3C1053 100%);
 }
 
+html h3 {
+  opacity: 0.4;
+}
+
+html p {
+  margin-bottom: 40px;
+}
+
 .container {
   position: relative;
   max-width: 960px;
@@ -97,29 +105,6 @@ html {
   }
 }
 
-.body {
-  font-size: 10px;
-}
-
-section h3 {
-  opacity: 0.4;
-}
-
-section p {
-  margin-bottom: 40px;
-}
-
-.pulse {
-  position: absolute;
-  width: 16px;
-  height: 16px;
-  right: 5%;
-  top: 8%;
-  background: #d50000;
-  border-radius: 8px;
-  opacity: 0;
-}
-
 .template {
   font-size: 1.8rem;
   display: block;
@@ -150,6 +135,17 @@ section p {
   text-align: justify;
 }
 
+.pulse {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  right: 5%;
+  top: 8%;
+  background: #d50000;
+  border-radius: 8px;
+  opacity: 0;
+}
+
 .flip-temp {
   font-size: 1.8rem;
   margin: 100px auto;
@@ -177,10 +173,6 @@ section p {
           transform: scale(1.2) rotate(12deg);
   -webkit-transition: .5s;
   transition: .5s;
-}
-
-.flex-column {
-  max-width: 960px;
 }
 
 .sticky {

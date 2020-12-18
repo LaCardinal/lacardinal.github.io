@@ -1,0 +1,27 @@
+.template
+    font-size: 1.8rem
+    display: block  
+    background-color: #fff
+    border-radius: 8px 8px 16px 16px
+    box-shadow: 0px 16px 32px rgba(0, 0, 0, 0.08)
+    &:hover .pulse
+        opacity: 1
+        animation: ripple .6s ease-in infinite alternate
+    .temp-img
+        position: relative
+        img 
+            border-radius: 8px 8px 0px 0px 
+            width: 100%
+    h2,h3,p
+        width: 80%
+        margin-left: 10%
+        text-align: justify
+.pulse
+    position: absolute
+    width: 16px
+    height: 16px
+    right: 5%
+    top: 8%
+    background: #d50000
+    border-radius: 8px
+    opacity: 0

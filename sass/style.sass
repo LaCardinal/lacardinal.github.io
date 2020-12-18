@@ -1,86 +1,8 @@
 @import 'fonts'
 @import 'layout'
-
-.body   
-    font-size: 10px
-section
-    h3 
-        opacity: 0.4
-    p 
-        margin-bottom: 40px
-.pulse
-    position: absolute
-    width: 16px
-    height: 16px
-    right: 5%
-    top: 8%
-    background: #d50000
-    border-radius: 8px
-    opacity: 0
-.template
-    font-size: 1.8rem
-    display: block  
-    background-color: #fff
-    border-radius: 8px 8px 16px 16px
-    box-shadow: 0px 16px 32px rgba(0, 0, 0, 0.08)
-    &:hover .pulse
-        opacity: 1
-        animation: ripple .6s ease-in infinite alternate
-    .temp-img
-        position: relative
-        img 
-            border-radius: 8px 8px 0px 0px 
-            width: 100%
-    h2,h3,p
-        width: 80%
-        margin-left: 10%
-        text-align: justify
-.flip-temp
-    font-size: 1.8rem
-    margin: 100px auto 
-    transform: rotate(12deg)
-    background-color: #fff
-    border-radius: 8px 8px 16px 16px
-    box-shadow: 0px 16px 32px rgba(0, 0, 0, 0.08)
-    img 
-        width: 100%
-        border-radius: 8px 8px 0px 0px 
-    h2,h3,p
-        width: 80%
-        margin-left: 10%
-        text-align: justify
-    &:hover 
-        transform: scale(1.2) rotate(12deg)
-        transition: .5s
-.flex-column
-    max-width: 960px
-.sticky
-    font-size: 20px
-    color: #ffffff
-.sticky-line
-    margin: 15px 0
-    width: 100%
-    height: 1px
-    background: linear-gradient(130.01deg, rgba(255, 255, 255, 0) 0%, #FFFFFF 52.6%, rgba(255, 255, 255, 0) 99.99%)
-
-.up-btn
-    font-size: 20px
-    font-weight: 700
-    letter-spacing: 2px
-    text-align: center
-    border: none
-    width: 64px
-    height: 64px
-    border-radius: 8px
-    box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.32)
-    background: #ffffff
-    text-decoration: none
-    cursor: pointer
-    outline: none
-    &:hover 
-        background: #d50000
-        transition: .5s
-
+@import 'main'
+@import 'flip'
+@import 'vault'
 @keyframes ripple
     0%
         transform: scale(1) 
